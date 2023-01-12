@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- the head of the html, which defines style as well as sets a title to be displayed on a window or the name of the tab -->
+  <head>
+    <title>My Congressional Representative</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- i didn't like the times font so i recalled that i could import google fonts from the pre-work so i did that here
+    additionally, i added the font-family styling to my css -->
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap'); </style>
+  </head>
+  <!-- the body of the page so therefore, it has the class name of body which is a block
+  this is a good class to have because it can style elements in the header, articles, and footer of the webpage -->
+  <body class="body">
+    <!-- the header of the page. naturally, it's at the top which is why I chose to style it with the class name of pageHeader -->
+    <header class="pageHeader">
+        <!-- here's the title of my page as it is displayed on my body. i chose to style it with the h1 tag for the built-in styling, but
+        if i want to change the h1 styling, i've defined the class h1 -->
+        <h1 class="h1">My Congressional Representative</h1>
+    </header>
+    <!-- the meat and potatoes of the page. this contains all the information of my representative so I styled it with the class name of article_my_rep.
+    it's here that i chose to display my section elements as flex boxes in a column orientation -->
+    <article class="article_my_rep">
+        <!-- here are the beginning section elements of my article
+        as this image only appears once, i chose to style it with an id tag -->
+        <section><img id="rep_photo" src="https://www.govtrack.us/static/legislator-photos/412819-200px.jpeg" alt="A headshot of Rep. Mark E. Green of Tennessee's 7th congressional district"></section>
+        <!-- here is another section element that i chose to style with an id tag. i used the h3 tag but did not add an h3 class since if i want to format it i can just use the id tag -->
+        <section id="rep_name">
+            <h3>Rep. Mark E. Green</h3>
+        </section>
+        <!-- here is another section element with the class of rep_info since i figured these next two sections should look pretty similar
+        the only thing i'm not totally sure of is hard coding the bold tags into the html with a bold class -->
+        <section class="rep_info">Representative for Tennessee's 7th congressional district since Jan 3, 2019 (next election in 2024)</section>
+        <section class="rep_info"><b class="bold_text">Party:</b> Republican</section>
+        <!-- i wanted my lists to populate next to each other so i created a div element here to supercede the column styling in article_my_rep -->
+        <div class="div_flex">
+            <!-- i figured i wanted both of my lists to look similar so i gave them the same classes for each element of the list -->
+            <section class="list_section">
+                <b class="list_title">Committees</b>
+                <ul>
+                    <li class="list_item">Foreign Affairs</li>
+                    <li class="list_item">Armed Services</li>
+                    <li class="list_item">Oversight and Reform</li>
+                </ul>
+            </section>
+            <section class="list_section">
+                <b class="list_title">Laws Passed</b>
+                <ul>
+                    <!-- i initially set up a class for links but that's unnecessary because of the <a> tag itself -->
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/5754?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=1">H.R.5754</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/5577?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=2">H.R.5577</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/5271?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=3">H.R.5271</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/1448?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=4">H.R.1448</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/1057?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=5">H.R.1057</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/390?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=6">H.R.390</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/117th-congress/house-bill/310?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=7">H.R.310</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/116th-congress/house-bill/3680?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=8">H.R.3680</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/116th-congress/house-bill/2423?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=9">H.R.2423</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/116th-congress/house-bill/1327?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=10">H.R.1327</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/116th-congress/house-bill/748?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=11">H.R.748</a></li>
+                    <li class="list_item"><a href="https://www.congress.gov/bill/116th-congress/house-bill/299?q=%7B%22search%22%3A%5B%22%22%5D%7D&s=1&r=12">H.R.299</a></li>
+                </ul>
+            </section>
+        </div>
+    </article>
+  </body>
+</html>

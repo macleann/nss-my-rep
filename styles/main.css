@@ -1,0 +1,62 @@
+.body {
+    background-color: lightblue;
+    font-family: 'Montserrat', sans-serif;
+    color: #181616;
+    text-align: center;
+}
+
+.pageHeader {
+    margin: 2.5em auto 1.25em auto;
+}
+
+.article_my_rep {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#rep_photo {
+    margin: 1.25em auto .125em auto;
+}
+
+#rep_name {
+    margin: 0em auto 0em auto;
+}
+
+.rep_info {
+    margin: .5em auto;
+}
+
+.div_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_section {
+    flex-basis: 50%;
+    margin: .5em 3em;
+    border: .1em solid darkslategray;
+    padding: .5em 2em;
+}
+
+.list_title {
+    margin: .1em auto;
+    text-align: left;
+}
+
+.list_item {
+    text-align: left;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: coral;
+}
